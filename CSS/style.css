@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    /* define css variables, store colors in a central place; no need to repeat color codes all the time, etc}*/
+    --section1-base: #ffeedb;
+    --section2-base: #f6f1ed;
+    --navbar-base: #604533;
+    --navbar-text-and-base:#fff;
+    --text1-and-buttons: #483528;
+    --text2: #d9d9d9;
+    --text-box:#f6f1ed;
+    --footer: #000000;
+    
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border box make sure padding and borders dont mess up the size calc*/
+    /*removed default starts using universal selector*/
+}
+
+html{
+    /* defines the style of the whole page*/
+    font-family: "Ubuntu", "Alumni Sans", sans-serif;
+    color: var(--text1-and-buttons);
+    /* var is variable */
+}
+   
+
+body {
+    padding: 2em 0 ; 
+    background-color: var(--navbar-text-and-base);
+}
+
+
+h1, h2, h3{
+     font-family: "Poppins", sans-serif;
+
+}
+
+
+p{
+    font-size: 1.4rem;
+}
+
+h1{
+    font-size: 6rem;/* ensure consistem font size*/
+    margin-bottom: 0.2em;
+    font-weight: 410;
+    line-height: 1;
+}
+
+.bold-text {
+    font-weight: 600; 
+} 
+
+aside
+{
+    position: fixed;/*makes it stay*/
+    top: 0; /*puts it on the top*/
+    width: 100%; /*full width of the page*/
+    background-color: var(--navbar-base);
+    z-index: 1000;/*z index comtrols the frist layers, its a bigg number to make sure it stays on top*/
+    padding: 0.6em 1em;
+    padding-left: 0.2em;
+    font-size: 1.2rem;
+}
+
+nav{
+    margin: 0 auto;
+    width: min(1100px, 100%)
+    /*nav bar can grow until 1100px but never widter than the screen size*/  
+}
+
+nav ul {
+    display: flex; /*turns it into a horizontal row*/
+    align-items: center;
+    list-style-type: none; /*removes the bullet points*/
+    gap: 2em;
+    justify-content: flex-end;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    
+}
+
+nav a {
+    text-decoration: none;/*removes under line*/
+    color: var(--navbar-text-and-base);
+    font-family: "Poppins", sans-serif;
+ }
+
+ nav a:hover { 
+    /*when the cursor is over an element*/
+    text-decoration: underline;
+
+ }
+
+
+header, section {
+    margin: 2em auto; /* adds vertical spacing and centers*/
+    width: min(75em, 100%);/*element can grow up to 753m but dont overflow*/
+    padding: min(3em, 15%);/*2em by default and 15% on smaller screens*/
+    border-radius: 1em;/*rounded corners*/
+
+}
+
+header
+{
+    margin-top: 3.5em; /*separates from the navbar*/
+    background-color: var(--section1-base);
+}
+
+#subtitle {
+    font-size: 1.6rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /*allows the content to stack*/
+    gap: 2em; /*space between image and text container*/
+    
+}
+
+header img{
+    max-width: 100%;/*never overflows its container*/
+    border-radius: 1em;
+    object-fit: cover; /*image fills its area without streaching*/
+    object-position: bottom; /*if cropping happends starts from bottom*/
+}
+
+
+.text-container {
+    flex: 0 1 45em; /* 0 means it cant grow, 1 means it can shrink, 45em is the max width*/
+    
+}
+
+.text-container p {
+    margin: 0 0 1em 0;
+}
+
+
+.cta-button {
+    display: inline-block; /*allows padding and width*/
+    text-decoration: none;
+    color: var(--navbar-text-and-base);
+    font-size: 1em;
+    background-color: var(--text1-and-buttons);
+    padding: .75em 2em;
+    border-radius: 3em;
+    margin-left: 1em;
+    
+}
+
+.button-container {
+  text-align: right;
+  margin-top: 1em;
+}
+
+section {
+    background-color: var(--section2-base);
+    padding: 3em  min(2em);/*top and bottom fixed, left and right responsive*/
+    text-align:left;
+}
+
+
+section img {
+     max-width: 100%;/*never overflows its container*/
+     border-radius: 1em;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 450;
+    margin-bottom: 0.6em;
+}
+
+section p{
+    margin-top: 1em;
+    
+}
+
+
+footer{
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+footer a, footer span{
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--footer);
+    font-family: "Poppins", sans-serif;
+
+}
+
+footer a:hover {/*when mouse touches*/
+    text-decoration: underline;
+    
+}
+
+/*         --------------------------------------------------------------      */
+
+h2{
+    font-size: 3rem;
+    font-weight: 450;
+    margin-bottom: 0.6em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 3em auto; 
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* LEFT - RIGHT */
+    gap: 40px;
+    padding: 10px 40px;
+}
+
+/* LEFT SIDE (image + text box) */
+.left-box 
+{
+    background-color: var(--section2-base);
+    border-radius: 20px;
+    padding: 30px;
+    
+}
+
+.left-box img 
+{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 1.2em;
+}
+
+.left-box p
+{   
+   
+   margin: 1em ;
+   line-height: 1.5em ;
+}
+
+/* RIGHT SIDE (form box) */
+
+
+.form-box {
+    background-color: var(--section1-base);
+    padding: 40px 50px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 2em;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: 0.8em;
+
+}
+
+label { /* Align label and input on same line */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+}
+
+.choose-one-line {
+    display: flex;
+    gap: 20px; /* space between yes/no */
+    align-items: center;
+}
+.choose-one-line label {
+    display: inline; /* keep label inline with the input */
+    margin: 0;
+}
+
+.agreements label
+{
+    font-size: 0.8em;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 75%;
+    padding: 8px;
+    border: 1px solid var(--footer);
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+input[type="submit"] {
+    background-color: var(--navbar-base);
+    color: var(--navbar-text-and-base);
+    padding: 10px 25px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+
+}
+
+input[type="submit"]:hover {
+    background-color:var(--text1-and-buttons);
+}
+
+
+
+/*--------------------------------------------------------------------------*/
