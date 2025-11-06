@@ -37,7 +37,7 @@ body {
 }
 
 
-h1, h2, h3{
+h1, h2, h3 {
      font-family: "Poppins", sans-serif;
 
 }
@@ -215,6 +215,10 @@ h2{
     margin-bottom: 0.6em;
 }
 
+h4{
+     font-size: 1.2rem;
+    font-weight: 500;
+}
 .container {
     max-width: 1200px;
     margin: 3em auto; 
@@ -257,16 +261,6 @@ h2{
     font-size: 1.2rem;
 }
 
-fieldset {
-  border: none;
-  margin-bottom: 2em;
-}
-
-legend {
-  font-weight: 600;
-  margin-bottom: 0.8em;
-
-}
 
 label { /* Align label and input on same line */
   display: flex;
@@ -295,12 +289,21 @@ input[type="text"],
 input[type="date"],
 input[type="tel"],
 input[type="email"],
+input[type="number"],
+select,
 textarea {
     width: 75%;
     padding: 8px;
     border: 1px solid var(--footer);
     font-size: 0.9rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--text2);
 }
+
+::placeholder{
+    color: var(--text2)
+}
+
 
 /* Buttons */
 input[type="submit"] {

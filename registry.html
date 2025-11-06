@@ -5,193 +5,205 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registry</title>
   <link rel="stylesheet" href="CSS/style.css">
-
 </head>
+
 <body>
+  <!-- NAVIGATION BAR -->
+  <aside>
+    <nav>
+      <ul>
+        <li>
+          <a href="home.html">
+            <img alt="logo-img" height="35" width="200" src="IMG/CLOVERVILLE.png">
+          </a>
+        </li>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="registry.html">REGISTRY</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-<aside> <!-- this is for the navbar, aside instead of header to be able to move it around-->
-        <nav>
-            <ul>
-                <li><a href="home.html"><img alt="logo-img" height="35" width ="200" src = "IMG/CLOVERVILLE.png"></a></li> <!--by pressing the logo you can go back home-->
-                <li><a href="home.html">HOME</a></li><!--home button-->
-                <li><a href="registry.html">REGISTRY</a></li><!--registry button-->
-                <li><a href="#contact">CONTACT</a></li><!--goes to a section of the same page-->
-            </ul>
-        </nav>
-    </aside>
-
-
-
-<div class="container">
+  <div class="container">
     <!-- LEFT SIDE -->
     <div class="left-box">
-        <img alt="section2-img"  src="IMG/No_Image_Available.jpg" height="500" width="350" >
-        <p>
-            Become part of an eco-village that values collaboration, sustainability,
-            and mindful living. By registering, you take the first step toward joining 
-            a community where every action — from planting vegetables to sharing resources — 
-            helps build a greener future. Once you apply, your information will be reviewed by our 
-            community coordinators. If accepted, you’ll be able to explore available living spaces and 
-            start your journey toward sustainable living in Cloverville
-        </p>
+      <img alt="section2-img" src="IMG/No_Image_Available.jpg" height="500" width="350">
+      <p>
+        Become part of an eco-village that values collaboration, sustainability,
+        and mindful living. By registering, you take the first step toward joining
+        a community where every action — from planting vegetables to sharing resources —
+        helps build a greener future. Once you apply, your information will be reviewed by our
+        community coordinators. If accepted, you’ll be able to explore available living spaces and
+        start your journey toward sustainable living in Cloverville.
+      </p>
     </div>
-
 
     <!-- RIGHT SIDE -->
     <div class="form-box">
-        <h2>REGISTER TO START APPLYING!</h2>
+      <h2>REGISTER TO START APPLYING!</h2>
 
-        <!--FULL FORM HERE -->
-        <form action="http://www.no-where.com/formhandler.php">
+      <!-- FULL FORM STARTS HERE -->
+      <form action="/action_page.html">
 
-    <!-- Personal Information  -->
-    <fieldset>
-      <legend>Personal Information</legend>
+        <!-- PERSONAL INFORMATION -->
+        <div class="form1">
+          <h4>Personal Information</h4>
+          <br>
 
-      <!-- Full name -->
-            <label for="firstName">First name:
-                <input type="text" name="firstName" id="firstName" placeholder="Type here" required>
+          <!-- Full name -->
+          <label for="firstName">First name:
+            <input type="text" name="firstName" id="firstName" placeholder="Type here" required>
+          </label>
+          <br>
+
+          <!-- Last Name -->
+          <label for="lastName">Last name:
+            <input type="text" name="lastName" id="lastName" placeholder="Type here" required>
+          </label>
+          <br>
+
+          <!-- Date of birth -->
+          <label for="birth">Date of birth:
+            <input type="date" id="birth" name="birth" required>
+          </label>
+          <br>
+
+          <!-- Age -->
+          <label for="age">Age:
+            <input type="number" id="age" name="age" min="16" max="120" step="1" required>
+          </label>
+          <br>
+
+          <!-- Email -->
+          <label for="email">Email:
+            <input type="email" name="email" id="email" placeholder="email@email.com" required>
+          </label>
+          <br>
+
+          <!-- Phone number -->
+          <label for="phone">Phone Number:
+            <input type="tel" id="phone" name="phone" pattern="[\+]?[0-9\s\-\(\)]{10,}" placeholder="+45 000000" required>
+          </label>
+          <br>
+
+          <!-- Address -->
+          <label for="address">Current address:
+            <input type="text" id="address" name="address" placeholder="123 Adress" required>
+          </label>
+          <br>
+
+          <!-- Nationality -->
+          <label for="nationality">Nationality:
+            <input type="text" id="nationality" name="nationality" placeholder="Type here" required>
+          </label>
+          <br><br>
+        </div>
+
+        <!-- MOTIVATION SECTION -->
+        <div class="form2">
+          <h4>Motivation</h4>
+          <br>
+
+          <!-- Why CloverVille -->
+          <label for="motivation">Why do you want to join CloverVille?</label><br>
+          <textarea id="motivation" name="motivation" rows="5" cols="50" placeholder="Write your motivation here..." required></textarea>
+          <br><br>
+
+          <!-- Occupation or skills -->
+          <label for="skills">Occupation or main skills:</label><br>
+          <input type="text" id="skills" name="skills" placeholder="Write here..." required>
+          <br><br>
+
+          <!-- Experience with sustainability -->
+          <label>Experience with sustainability or community living?</label><br>
+          <div class="choose-one-line">
+            <input type="radio" id="expyes" name="experience" value="yes">
+            <label for="expyes">Yes</label>
+            <input type="radio" id="expno" name="experience" value="no">
+            <label for="expno">No</label>
+          </div>
+          <br>
+
+          <!-- Preferred housing -->
+          <label>Preferred housing:</label><br>
+          <div class="choose-one-line">
+            <input type="radio" id="shared" name="housing" value="shared">
+            <label for="shared">Shared</label>
+            <input type="radio" id="private" name="housing" value="private">
+            <label for="private">Private</label>
+          </div>
+          <br>
+
+          <!-- Comfort with community work -->
+          <label>Are you comfortable with communal work and events?</label><br>
+          <div class="choose-one-line">
+            <input type="radio" id="commyes" name="community" value="yes">
+            <label for="commyes">Yes</label>
+            <input type="radio" id="commno" name="community" value="no">
+            <label for="commno">No</label>
+          </div>
+          <br>
+
+          <!-- Dietary restrictions -->
+          <label for="diet">Any dietary restrictions?</label><br>
+          <select name="diet" id="diet">
+            <option value="preselection">Please Select One...</option>
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="gluten-free">Gluten Free</option>
+            <option value="other">Other</option>
+          </select>
+          <br><br>
+
+          <!-- File upload -->
+          <label for="file">Do you have a legal disability? Upload supporting document:
+            <input type="file" id="file" name="file">
+          </label>
+          <br>
+
+          <!-- Range slider -->
+          <label for="sustainability">How sustainable is your lifestyle? (1-10)
+            <input type="range" id="sustainability" name="sustainability" min="1" max="10" value="5">
+          </label>
+          <br>
+        </div>
+
+        <!-- AGREEMENT SECTION -->
+        <div class="form3">
+          <h4>Agreement</h4>
+          <br>
+
+          <!-- Agreements -->
+          <div class="agreements">
+            <label for="requirment">
+              I agree to follow CloverVille's principles of cooperation, equality, and sustainability
+              <input type="checkbox" id="requirment" name="requirment" required>
             </label>
             <br>
-            <label for="lastName">Last name:
-               <input type="text" name="lastName" id="lastName" placeholder="Type here" required>
+            <label for="tos">
+              I consent to data use and review for application purposes
+              <input type="checkbox" id="tos" name="tos" required>
             </label>
-        <br>
+          </div>
 
-      <!-- Date of birth -->
-      <label for="birth">Date of birth:
-      <input type="date" id="birth" name="birth" required>
-      </label>
-      <br>
-
-      <!-- Email -->
-     <label for="email">Email:
-                <input type="text" name="email" id="email" placeholder="Type here" required>
-            </label>
-      <br>
-
-      <!-- Phone number -->
-      <label for="phone">Tlf:
-                <input type="tel" id="phone" name="phone" pattern="[\+]?[0-9\s\-\(\)]{10,}" placeholder="Type here" required>
-            </label>
-      <br>
-
-      <!-- Address -->
-      <label for="address">Current address:
-                <input type="text" id="address" name="address" required placeholder="Type here">
-            </label>
-      <br>
-
-      <!-- Nationality -->
-      <label for="nationality">Nationality:
-      <input type="text" id="nationality" name="nationality" required placeholder="Type here">
-      </label>
-    </fieldset>
-    <br>
-
-    <!-- Motivation  -->
-    <fieldset>
-      <legend>Motivation</legend>
-
-      <!-- Why CloverVille -->
-      <label for="motivation">Why do you want to join CloverVille?<br>
-      <textarea id="motivation" name="motivation" rows="5" cols="50" placeholder="Write your motivation here..." required></textarea>
-        </label>
-      <br>
-
-      <!-- Occupation or skills -->
-      <label for="skills">Occupation or main skills:<br>
-      <input type="text" id="skills" name="skills"  placeholder="Write here..." required>
-        </label>
-      <br>
-
-      <!-- Experience with sustainability -->
-      <label>Experience with sustainability or community living?</label>
-      <div class="choose-one-line">
-      <input type="radio" id="expyes" name="experience" value="yes" required>
-      <label for="expyes">Yes</label>
-      <input type="radio" id="expno" name="experience" value="no">
-      <label for="expno">No</label>
-      </div>
-      <br>
-
-      <!-- Preferred housing -->
-      <label>Preferred housing:</label>
-      <div class="choose-one-line">
-      <input type="radio" id="shared" name="housing" value="shared" required>
-      <label for="shared">Shared</label>
-      <input type="radio" id="private" name="housing" value="private">
-      <label for="private">Private</label>
-      </div>
-      <br>
-
-      <!-- Comfort with community work -->
-      <label>Are you comfortable with communal work and events?</label>
-      <div class="choose-one-line">
-      <input type="radio" id="commyes" name="community" value="yes" required>
-      <label for="commyes">Yes</label>
-      <input type="radio" id="commno" name="community" value="no">
-      <label for="commno">No</label>
-      </div>
-      <br>
-
-      <!-- Dietary restrictions -->
-      <label for="diet">Any dietary restrictions or special needs?<br>
-      <textarea id="diet" name="diet" rows="3" cols="40" placeholder="If any, please write here..."></textarea>
-        </label>
-        <br>
-
-      <!-- File upload -->
-      <label for="file">Upload supporting document:
-      <input type="file" id="file" name="file">
-        </label>
-      <br>
-
-      <!-- Range slider -->
-      <label for="sustainability">How sustainable is your lifestyle? (1-10)
-      <input type="range" id="sustainability" name="sustainability" min="1" max="10" value="5">
-        </label>
-    </fieldset>
-    <br>
- 
-    <!-- Agreement -->
-    <fieldset>
-      <legend >Agreement</legend>
-      <div class="agreements">
-      <label>
-        I agree to follow CloverVille's principles of cooperation, equality, and sustainability
-
-        <input type="checkbox" required>
-       
-      </label>
-      <br>
-      <label>
-        I consent to data use and review for application purposes
-        <input type="checkbox"  required>
-    
-      </label>
-      </div>
-    </fieldset>
-    <br>
-
-    <!-- Submit button -->
-    <div class="button-container">
-        <input type="submit" value="SAVE">
-     </div>
-     </form>
+          <br>
+          <!-- Submit button -->
+          <div class="button-container">
+            <input type="submit" value="SAVE">
+          </div>
+        </div>
+      </form>
     </div>
-</div>
-
-
-<footer id="contact">
-    <span>Contact:</span><!---->
-    <span>Phone: +54 444000444</span>
-    <span>Mail:</span>
-    <span><a href="mailto:Cloverville@yahoo.com">Cloverville@yahoo.com</a></span>
-    <a href="#">LinkedIn</a>
-    <a href="#">Webside</a>
-</footer>
-
-
-  </body>
+  </div>
+      <!-- FOOTER -->
+      <footer id="contact">
+        <span>Contact:</span>
+        <span>Phone: +54 444000444</span>
+        <span>Mail:</span>
+        <span><a href="mailto:Cloverville@yahoo.com">Cloverville@yahoo.com</a></span>
+        <a href="#">LinkedIn</a>
+        <a href="#">Webside</a>
+      </footer>
+    
+</body>
 </html>
