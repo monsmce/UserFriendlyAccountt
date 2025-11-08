@@ -79,6 +79,12 @@ aside
   overflow: hidden;
 }
 
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
 nav{
     margin: 0 auto;
     width: min(1100px, 100%)
@@ -333,4 +339,5 @@ input[type="submit"]:hover {
 
 
 /*--------------------------------------------------------------------------*/
+
 
