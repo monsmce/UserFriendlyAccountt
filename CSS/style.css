@@ -349,9 +349,11 @@ input[type="submit"]:hover {
 @media (max-width: 320px) {
     nav{
         fon-size: 1rem;
+    }
         
   
 }
+
 
 
 
