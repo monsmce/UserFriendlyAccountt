@@ -58,18 +58,6 @@ h1{
     font-weight: 600; 
 } 
 
-aside
-{
-    position: fixed;/*makes it stay*/
-    top: 0; /*puts it on the top*/
-    width: 100%; /*full width of the page*/
-    background-color: var(--navbar-base);
-    z-index: 1000;/*z index comtrols the frist layers, its a bigg number to make sure it stays on top*/
-    padding: 0.6em 1em;
-    padding-left: 0.2em;
-    font-size: 1.2rem;
-}
-
 .skip {
   position: absolute;
   left: -100000px;
@@ -83,6 +71,19 @@ aside
   position: static;
   width: auto;
   height: auto;
+}
+
+
+aside
+{
+    position: fixed;/*makes it stay*/
+    top: 0; /*puts it on the top*/
+    width: 100%; /*full width of the page*/
+    background-color: var(--navbar-base);
+    z-index: 1000;/*z index comtrols the frist layers, its a bigg number to make sure it stays on top*/
+    padding: 0.6em 1em;
+    padding-left: 0.2em;
+    font-size: 1.2rem;
 }
 
 nav{
@@ -339,6 +340,7 @@ input[type="submit"]:hover {
 
 
 /*--------------------------------------------------------------------------*/
+
 
 
 
