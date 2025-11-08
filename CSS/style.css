@@ -70,6 +70,15 @@ aside
     font-size: 1.2rem;
 }
 
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 nav{
     margin: 0 auto;
     width: min(1100px, 100%)
@@ -324,3 +333,4 @@ input[type="submit"]:hover {
 
 
 /*--------------------------------------------------------------------------*/
+
