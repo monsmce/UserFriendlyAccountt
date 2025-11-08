@@ -72,7 +72,7 @@ aside
 
 .skip {
   position: absolute;
-  left: -10000px;
+  left: -100000px;
   top: auto;
   width: 1px;
   height: 1px;
@@ -339,5 +339,6 @@ input[type="submit"]:hover {
 
 
 /*--------------------------------------------------------------------------*/
+
 
 
