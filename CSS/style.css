@@ -9,7 +9,7 @@
     --navbar-text-and-base:#fff;
     --text1-and-buttons: #483528;
     --text2: #d9d9d9;
-    --text3: #7b797a;
+    --text3: #a4a4a4;
     --text-box:#f6f1ed;
     --footer: #000000;
     
@@ -349,6 +349,7 @@ input[type="submit"]:hover {
 @media (max-width: 320px) {
   
 }
+
 
 
 
