@@ -117,6 +117,10 @@ nav a {
 
  }
 
+a:visited {
+  color: var(--text2);
+}
+
 
 header, section {
     margin: 2em auto; /* adds vertical spacing and centers*/
@@ -340,6 +344,7 @@ input[type="submit"]:hover {
 
 
 /*--------------------------------------------------------------------------*/
+
 
 
 
