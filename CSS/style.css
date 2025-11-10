@@ -109,7 +109,7 @@ nav a:visited {
 nav a:active {
   color: var(--navbar-text-and-base);
   text-decoration: underline;
-
+}
 
 header, section {
     margin: 2em auto; /* adds vertical spacing and centers*/
@@ -333,6 +333,7 @@ input[type="submit"]:hover {
 
 
 /*--------------------------------------------------------------------------*/
+
 
 
 
