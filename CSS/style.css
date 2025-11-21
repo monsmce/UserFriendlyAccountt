@@ -330,3 +330,100 @@ input[type="submit"]:hover {
     background-color:var(--text1-and-buttons);
 }
 
+/* --------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  header,
+  section {
+    width: 95%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .container {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  body {
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  aside {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  header,
+  section {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  #subtitle {
+    font-size: 15px;
+  }
+
+  .button-container {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  footer {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5%;
+  }
+
+  .left-box {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .right-box {
+    width: 80%;
+  }
+
+  .container p {
+    font-size: 15px;
+  }
+
+  .container img {
+    width: 30%;
+    height: 10%;
+    margin-top: 2.5%;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  label {
+    font-size: 15px;
+  }
+}
