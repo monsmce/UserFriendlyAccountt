@@ -81,7 +81,7 @@ nav ul {
     display: flex; /*turns it into a horizontal row*/
     align-items: center;
     list-style-type: none; /*removes the bullet points*/
-    gap: 2em;
+    gap: 5%;
     justify-content: flex-end;
 }
 
@@ -89,6 +89,10 @@ nav li:first-child{
     margin-right: auto;
     
 }
+
+/* nav li{
+  width: 25%;
+} */
 
 nav a {
     text-decoration: none;/*removes under line*/
@@ -138,6 +142,10 @@ header
     
 }
 
+.flex-container img{
+  height: auto;
+}
+
 header img{
     max-width: 100%;/*never overflows its container*/
     border-radius: 1em;
@@ -169,6 +177,8 @@ header img{
 }
 
 .button-container {
+  display: flex;
+  flex-direction: space-between;
   text-align: right;
   margin-top: 1em;
 }
@@ -309,11 +319,16 @@ textarea {
     border: 1px solid var(--footer);
     font-size: 0.9rem;
     font-family: "Poppins", sans-serif;
-    color: var(--text2);
+    color: var(--footer);
 }
 
 ::placeholder{
     color: var(--text2)
+}
+
+label::after{
+  content: '*';
+  color: red;
 }
 
 
@@ -406,6 +421,7 @@ hr{
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 1.5%;
   }
 
@@ -506,3 +522,4 @@ hr{
   }
 
 }
+
